@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.candicelouw.plaquesdeparisno1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.candicelouw.plaquesdeparisno1.InformationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.candicelouw.plaquesdeparisno1.paris_1er_basic" android:label="&#8470; 1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/paris_1er_basic_widget"/>
+        </receiver>
+
+        <receiver android:name="com.candicelouw.plaquesdeparisno1.paris_1er_museedulouvre" android:label="&#8470; 1 | Musée du Louvre">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/paris_1er_museedulouvre_widget"/>
+        </receiver>
+
+        <receiver android:name="com.candicelouw.plaquesdeparisno1.paris_1er_placevendome" android:label="&#8470; 1 | Place Vendôme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/paris_1er_placevendome_widget"/>
+        </receiver>
+
+        <receiver android:name="com.candicelouw.plaquesdeparisno1.paris_1er_ruederivoli" android:label="&#8470; 1 | Rue de Rivoli">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/paris_1er_ruederivoli_widget"/>
+        </receiver>
+
+    </application>
+
+
+-
+</manifest>
