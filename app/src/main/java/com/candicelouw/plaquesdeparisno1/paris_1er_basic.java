@@ -26,6 +26,7 @@ public class paris_1er_basic extends AppWidgetProvider {
             PackageManager packageManager = context.getPackageManager();
             Intent alarmClockIntent = new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER);
 
+
             String clockImpls[][] = {
                     { "HTC", "com.htc.android.worldclock",
                             "com.htc.android.worldclock.WorldClockTabControl" },
@@ -42,7 +43,6 @@ public class paris_1er_basic extends AppWidgetProvider {
                     { "Sony Ericsson", "com.sonyericsson.alarm", "com.sonyericsson.alarm.Alarm" },
                     { "Samsung", "com.sec.android.app.clockpackage",
                             "com.sec.android.app.clockpackage.ClockPackage" } };
-
             boolean foundClockImpl = false;
 
             for(int i=0; i<clockImpls.length; i++)
