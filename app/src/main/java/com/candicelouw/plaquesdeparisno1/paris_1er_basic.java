@@ -43,6 +43,7 @@ public class paris_1er_basic extends AppWidgetProvider {
                     { "Sony Ericsson", "com.sonyericsson.alarm", "com.sonyericsson.alarm.Alarm" },
                     { "Samsung", "com.sec.android.app.clockpackage",
                             "com.sec.android.app.clockpackage.ClockPackage" } };
+
             boolean foundClockImpl = false;
 
             for(int i=0; i<clockImpls.length; i++)
