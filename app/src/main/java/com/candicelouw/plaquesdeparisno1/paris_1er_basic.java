@@ -10,7 +10,7 @@ import android.content.pm.PackageManager;
 import android.widget.RemoteViews;
 
 /**
- * Created by CLouw on 16/03/2018.
+ * Originally created and designed by CLouw on 16/03/2018.
  */
 public class paris_1er_basic extends AppWidgetProvider {
 
